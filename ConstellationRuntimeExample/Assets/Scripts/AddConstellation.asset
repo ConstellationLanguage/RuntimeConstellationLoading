@@ -94,14 +94,14 @@ MonoBehaviour:
         Description: value 1 + value 2
       ParametersData: []
       DiscreteParametersData: []
-    - Guid: 86cd4a23-42a6-4a2a-b460-fbbc232885e3
+    - Guid: b4de3df3-be40-4395-941d-fb9f1b35eb70
       Name: LoadTextFileAtPath
       Namespace: FilesIO
       OverrideDisplayedName: 
       XPosition: 470
       YPosition: 110
-      SizeX: 194
-      SizeY: 40
+      SizeX: 75
+      SizeY: 60
       Inputs:
       - Guid: dd8280e2-d5b3-4de1-bb5d-82ebd93113fd
         IsBright: 1
@@ -112,6 +112,10 @@ MonoBehaviour:
         IsBright: 0
         Type: Var
         Description: The text
+      - Guid: 2074886a-0db7-4921-ad9c-ea102f7ab9dc
+        IsBright: 0
+        Type: Var
+        Description: Failure
       ParametersData: []
       DiscreteParametersData: []
     - Guid: d50da921-cf5f-4c41-bb26-228a4b0ac93e

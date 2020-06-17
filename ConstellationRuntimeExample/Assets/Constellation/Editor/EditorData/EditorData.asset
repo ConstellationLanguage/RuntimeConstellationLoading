@@ -16,7 +16,7 @@ MonoBehaviour:
   - ScriptTag: 0
     IsIstance: 0
     InstancePath: 
-    ScriptPath: Assets/Scripts/RocketGame.asset
+    ScriptPath: Assets/Scripts/AddConstellation.asset
   SliderX: 0
   SliderY: 0
   clipBoard:
