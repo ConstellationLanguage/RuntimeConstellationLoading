@@ -30,12 +30,52 @@ MonoBehaviour:
           floatValue: 0.000001
         Type: 1
       DiscreteParametersData: []
+    - Guid: 975ad2cb-dfeb-44b8-9fae-af762ab1487a
+      Name: AddImpulseForce
+      Namespace: Physics
+      OverrideDisplayedName: 
+      XPosition: 1515
+      YPosition: 95
+      SizeX: 123
+      SizeY: 60
+      Inputs:
+      - Guid: 68e2cb3a-502b-4ecd-9848-c36ea4b11ac0
+        IsBright: 0
+        Type: Object
+        Description: The game object affected
+      - Guid: f22a04c7-85d0-429e-a226-fc1a6adcbf83
+        IsBright: 0
+        Type: Vec3
+        Description: Vec3 world relative
+      Outputs: []
+      ParametersData: []
+      DiscreteParametersData: []
+    - Guid: 5bd40bab-7ea8-4833-add6-41051c66f10d
+      Name: Instantiate
+      Namespace: GameObjects
+      OverrideDisplayedName: 
+      XPosition: 1115
+      YPosition: 95
+      SizeX: 99
+      SizeY: 40
+      Inputs:
+      - Guid: 7b55ccc1-17b8-4324-8647-2d04cfa43ce4
+        IsBright: 1
+        Type: Object
+        Description: GameObject
+      Outputs:
+      - Guid: b927b5a1-cf69-4081-82c1-1b48dc4cbde4
+        IsBright: 1
+        Type: Object
+        Description: Instantiated GameObject
+      ParametersData: []
+      DiscreteParametersData: []
     - Guid: 32b66e36-1c58-4564-a2ff-74a798a501a9
       Name: LoadResource
       Namespace: FilesIO
       OverrideDisplayedName: 
       XPosition: 450
-      YPosition: 205
+      YPosition: 100
       SizeX: 99
       SizeY: 40
       Inputs:
@@ -55,7 +95,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 250
-      YPosition: 205
+      YPosition: 100
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -70,52 +110,12 @@ MonoBehaviour:
           floatValue: 0.000001
         Type: 1
       DiscreteParametersData: []
-    - Guid: 5bd40bab-7ea8-4833-add6-41051c66f10d
-      Name: Instantiate
-      Namespace: GameObjects
-      OverrideDisplayedName: 
-      XPosition: 1350
-      YPosition: 205
-      SizeX: 99
-      SizeY: 40
-      Inputs:
-      - Guid: 7b55ccc1-17b8-4324-8647-2d04cfa43ce4
-        IsBright: 1
-        Type: Object
-        Description: GameObject
-      Outputs:
-      - Guid: b927b5a1-cf69-4081-82c1-1b48dc4cbde4
-        IsBright: 1
-        Type: Object
-        Description: Instantiated GameObject
-      ParametersData: []
-      DiscreteParametersData: []
-    - Guid: 975ad2cb-dfeb-44b8-9fae-af762ab1487a
-      Name: AddImpulseForce
-      Namespace: Physics
-      OverrideDisplayedName: 
-      XPosition: 1755
-      YPosition: 205
-      SizeX: 123
-      SizeY: 60
-      Inputs:
-      - Guid: 68e2cb3a-502b-4ecd-9848-c36ea4b11ac0
-        IsBright: 0
-        Type: Object
-        Description: The game object affected
-      - Guid: f22a04c7-85d0-429e-a226-fc1a6adcbf83
-        IsBright: 0
-        Type: Vec3
-        Description: Vec3 world relative
-      Outputs: []
-      ParametersData: []
-      DiscreteParametersData: []
     - Guid: d5a9abbc-dafc-44eb-9a7e-5e1d4817ce0b
       Name: Forward
       Namespace: Vectors
       OverrideDisplayedName: 
-      XPosition: 1550
-      YPosition: 260
+      XPosition: 1315
+      YPosition: 150
       SizeX: 94
       SizeY: 60
       Inputs:
@@ -139,7 +139,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 1145
-      YPosition: 280
+      YPosition: 175
       SizeX: 75
       SizeY: 60
       Inputs:
@@ -163,7 +163,7 @@ MonoBehaviour:
       Namespace: Parameters
       OverrideDisplayedName: 
       XPosition: 50
-      YPosition: 295
+      YPosition: 190
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -183,7 +183,7 @@ MonoBehaviour:
       Namespace: Vectors
       OverrideDisplayedName: 
       XPosition: 700
-      YPosition: 300
+      YPosition: 195
       SizeX: 100
       SizeY: 80
       Inputs:
@@ -223,7 +223,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 250
-      YPosition: 320
+      YPosition: 215
       SizeX: 100
       SizeY: 60
       Inputs:
@@ -251,7 +251,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 50
-      YPosition: 340
+      YPosition: 235
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -271,7 +271,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 250
-      YPosition: 420
+      YPosition: 315
       SizeX: 118
       SizeY: 40
       Inputs: []
@@ -291,7 +291,7 @@ MonoBehaviour:
       Namespace: GameObjects
       OverrideDisplayedName: 
       XPosition: 450
-      YPosition: 420
+      YPosition: 315
       SizeX: 89
       SizeY: 40
       Inputs:
@@ -310,8 +310,8 @@ MonoBehaviour:
       Name: ParticlesEmission
       Namespace: Visual
       OverrideDisplayedName: 
-      XPosition: 1325
-      YPosition: 425
+      XPosition: 1430
+      YPosition: 320
       SizeX: 75
       SizeY: 60
       Inputs:
@@ -331,7 +331,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 250
-      YPosition: 485
+      YPosition: 380
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -351,7 +351,7 @@ MonoBehaviour:
       Namespace: GameObjects
       OverrideDisplayedName: 
       XPosition: 450
-      YPosition: 485
+      YPosition: 380
       SizeX: 92
       SizeY: 40
       Inputs:
@@ -370,8 +370,8 @@ MonoBehaviour:
       Name: SetActive
       Namespace: GameObjects
       OverrideDisplayedName: 
-      XPosition: 1325
-      YPosition: 485
+      XPosition: 1430
+      YPosition: 380
       SizeX: 75
       SizeY: 80
       Inputs:
@@ -399,7 +399,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 1120
-      YPosition: 540
+      YPosition: 435
       SizeX: 75
       SizeY: 60
       Inputs:
@@ -423,7 +423,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 450
-      YPosition: 560
+      YPosition: 455
       SizeX: 100
       SizeY: 60
       Inputs:
@@ -447,7 +447,7 @@ MonoBehaviour:
       Namespace: Unity
       OverrideDisplayedName: 
       XPosition: 250
-      YPosition: 580
+      YPosition: 475
       SizeX: 99
       SizeY: 40
       Inputs: []
@@ -463,7 +463,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 785
-      YPosition: 630
+      YPosition: 525
       SizeX: 101
       SizeY: 40
       Inputs: []
@@ -483,7 +483,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 915
-      YPosition: 630
+      YPosition: 525
       SizeX: 117
       SizeY: 80
       Inputs:
@@ -531,7 +531,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 1120
-      YPosition: 630
+      YPosition: 525
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -551,7 +551,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 1265
-      YPosition: 630
+      YPosition: 525
       SizeX: 100
       SizeY: 60
       Inputs:
@@ -579,7 +579,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 250
-      YPosition: 650
+      YPosition: 545
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -599,7 +599,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 450
-      YPosition: 650
+      YPosition: 545
       SizeX: 100
       SizeY: 60
       Inputs:
@@ -627,7 +627,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 645
-      YPosition: 730
+      YPosition: 625
       SizeX: 99
       SizeY: 60
       Inputs:
@@ -651,7 +651,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 910
-      YPosition: 730
+      YPosition: 625
       SizeX: 100
       SizeY: 40
       Inputs:
@@ -671,7 +671,7 @@ MonoBehaviour:
       Namespace: Parameters
       OverrideDisplayedName: 
       XPosition: 50
-      YPosition: 750
+      YPosition: 645
       SizeX: 131
       SizeY: 40
       Inputs: []
@@ -691,7 +691,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 250
-      YPosition: 750
+      YPosition: 645
       SizeX: 100
       SizeY: 60
       Inputs:
@@ -719,7 +719,7 @@ MonoBehaviour:
       Namespace: Unity
       OverrideDisplayedName: 
       XPosition: 450
-      YPosition: 750
+      YPosition: 645
       SizeX: 99
       SizeY: 40
       Inputs:
@@ -739,7 +739,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 250
-      YPosition: 850
+      YPosition: 745
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -759,7 +759,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 450
-      YPosition: 865
+      YPosition: 760
       SizeX: 100
       SizeY: 60
       Inputs:
@@ -778,32 +778,12 @@ MonoBehaviour:
         Description: Result $1 x $2
       ParametersData: []
       DiscreteParametersData: []
-    - Guid: c94fad74-36dc-4f1a-99b6-7cd203ea0a1c
-      Name: ValueParameter
-      Namespace: Parameters
-      OverrideDisplayedName: 
-      XPosition: 45
-      YPosition: 885
-      SizeX: 100
-      SizeY: 41
-      Inputs: []
-      Outputs:
-      - Guid: a663bb0c-64f4-4afe-8379-051d8152f7b5
-        IsBright: 1
-        Type: Var
-        Description: Current value
-      ParametersData:
-      - Value:
-          stringValue: Side thrust
-          floatValue: 0.000001
-        Type: 1
-      DiscreteParametersData: []
     - Guid: 385ce7e1-1d1e-4f3f-abee-3c5738df5c05
       Name: AddTorque
       Namespace: Physics
       OverrideDisplayedName: 
-      XPosition: 1850
-      YPosition: 885
+      XPosition: 1610
+      YPosition: 775
       SizeX: 88
       SizeY: 60
       Inputs:
@@ -818,12 +798,32 @@ MonoBehaviour:
       Outputs: []
       ParametersData: []
       DiscreteParametersData: []
+    - Guid: c94fad74-36dc-4f1a-99b6-7cd203ea0a1c
+      Name: ValueParameter
+      Namespace: Parameters
+      OverrideDisplayedName: 
+      XPosition: 45
+      YPosition: 780
+      SizeX: 100
+      SizeY: 41
+      Inputs: []
+      Outputs:
+      - Guid: a663bb0c-64f4-4afe-8379-051d8152f7b5
+        IsBright: 1
+        Type: Var
+        Description: Current value
+      ParametersData:
+      - Value:
+          stringValue: Side thrust
+          floatValue: 0.000001
+        Type: 1
+      DiscreteParametersData: []
     - Guid: 842c5f2a-6ecb-45f7-aaa2-19e8cb993887
       Name: Vec3
       Namespace: Vectors
       OverrideDisplayedName: 
       XPosition: 850
-      YPosition: 910
+      YPosition: 805
       SizeX: 100
       SizeY: 80
       Inputs:
@@ -863,7 +863,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 645
-      YPosition: 950
+      YPosition: 845
       SizeX: 100
       SizeY: 60
       Inputs:
@@ -891,7 +891,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 45
-      YPosition: 965
+      YPosition: 860
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -911,7 +911,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 450
-      YPosition: 1015
+      YPosition: 910
       SizeX: 100
       SizeY: 60
       Inputs:
@@ -939,7 +939,7 @@ MonoBehaviour:
       Namespace: CoreNodes
       OverrideDisplayedName: 
       XPosition: 45
-      YPosition: 1035
+      YPosition: 930
       SizeX: 100
       SizeY: 40
       Inputs: []
@@ -1483,6 +1483,30 @@ MonoBehaviour:
         Description: Gameobject
       outputPositionY: 0
       GUID: faa25538-620d-4ebc-bda1-141eb6e139e2
+    - Input:
+        Guid: 1289a8a9-0478-4b4f-8322-4e92b243ebdd
+        IsBright: 0
+        Type: Var
+        Description: 1 = activate; 0 = disable
+      Output:
+        Guid: cb61b31b-0c57-45f8-9458-9282522ed362
+        IsBright: 0
+        Type: Var
+        Description: Output var
+      outputPositionY: 0
+      GUID: 08bd1e87-4c29-426e-a721-d0c2a2a9fa95
+    - Input:
+        Guid: 270a2cd8-1523-4e5b-a7eb-0d00277802b2
+        IsBright: 0
+        Type: Var
+        Description: Enable emission
+      Output:
+        Guid: cb61b31b-0c57-45f8-9458-9282522ed362
+        IsBright: 0
+        Type: Var
+        Description: Output var
+      outputPositionY: 0
+      GUID: c5da386d-e077-46f1-8fc4-e9c628a06616
     Name: Rocket
     NameSpace: RocketGame
   IsInstance: 0
