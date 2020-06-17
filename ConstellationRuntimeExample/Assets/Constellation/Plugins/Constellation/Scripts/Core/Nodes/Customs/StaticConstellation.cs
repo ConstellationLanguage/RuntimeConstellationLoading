@@ -127,8 +127,8 @@ namespace Constellation.ConstellationNodes
                 }
             });
             constellation.Initialize(System.Guid.NewGuid().ToString(), nameParameter.Value.GetString());
-            /*if (constellation.GetInjector() is IAwakable)
-                constellation.GetInjector().OnAwake();*/
+            if (constellation.GetInjector() is IAwakable)
+                constellation.GetInjector().OnAwake();
 
             isInitialized = true;
         }
