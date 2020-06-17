@@ -1,0 +1,203 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 15fbfb0892e200c4b900f8f3c6626ba1, type: 3}
+  m_Name: AddConstellation
+  m_EditorClassIdentifier: 
+  script:
+    Nodes:
+    - Guid: 69ca4d12-b427-42b0-b83b-53f6483af1d9
+      Name: ObjectParameter
+      Namespace: Unity
+      OverrideDisplayedName: 
+      XPosition: 600
+      YPosition: 45
+      SizeX: 100
+      SizeY: 40
+      Inputs: []
+      Outputs:
+      - Guid: 6b09a703-1adf-4bb9-b9d2-f89e45986e4d
+        IsBright: 1
+        Type: Object
+        Description: Unity object
+      ParametersData:
+      - Value:
+          stringValue: GameManager
+          floatValue: 0.000001
+        Type: 1
+      DiscreteParametersData: []
+    - Guid: 752fce18-8534-4157-95cf-5d2fd3082563
+      Name: StreamingAssetsPath
+      Namespace: FilesIO
+      OverrideDisplayedName: 
+      XPosition: 65
+      YPosition: 90
+      SizeX: 170
+      SizeY: 40
+      Inputs: []
+      Outputs:
+      - Guid: 08dfc956-3fdf-4892-8ad3-092a56deec2a
+        IsBright: 1
+        Type: Var
+        Description: Path
+      ParametersData: []
+      DiscreteParametersData: []
+    - Guid: a54c28f6-02c7-4c7b-9146-f80c0053a3fb
+      Name: AddConstellationBehaviourFromJSON
+      Namespace: Unity
+      OverrideDisplayedName: 
+      XPosition: 740
+      YPosition: 90
+      SizeX: 268
+      SizeY: 60
+      Inputs:
+      - Guid: f7a62821-21d2-4ecd-b0c2-2bcb3037efe7
+        IsBright: 0
+        Type: Object
+        Description: Constellation JSON
+      - Guid: b6ffcc61-ee5a-4ca9-ade6-78db590042f0
+        IsBright: 0
+        Type: Var
+        Description: Const JSON
+      Outputs: []
+      ParametersData: []
+      DiscreteParametersData: []
+    - Guid: 2b2cc619-e941-43d3-a95d-67d268e11e69
+      Name: Add
+      Namespace: CoreNodes
+      OverrideDisplayedName: 
+      XPosition: 335
+      YPosition: 110
+      SizeX: 75
+      SizeY: 60
+      Inputs:
+      - Guid: 4c1c6ac4-cb82-4c9e-8c4e-d161f970f452
+        IsBright: 0
+        Type: Var
+        Description: value 1
+      - Guid: 93defa40-76c7-448d-b45f-49c342419227
+        IsBright: 1
+        Type: Var
+        Description: value 2
+      Outputs:
+      - Guid: 78adcfae-d13f-4765-bdfa-0c7b1e6143b2
+        IsBright: 0
+        Type: Var
+        Description: value 1 + value 2
+      ParametersData: []
+      DiscreteParametersData: []
+    - Guid: 86cd4a23-42a6-4a2a-b460-fbbc232885e3
+      Name: LoadTextFileAtPath
+      Namespace: FilesIO
+      OverrideDisplayedName: 
+      XPosition: 470
+      YPosition: 110
+      SizeX: 194
+      SizeY: 40
+      Inputs:
+      - Guid: dd8280e2-d5b3-4de1-bb5d-82ebd93113fd
+        IsBright: 1
+        Type: Var
+        Description: File path
+      Outputs:
+      - Guid: bd4e61de-b9c1-4bf4-897a-6cc3839d1456
+        IsBright: 0
+        Type: Var
+        Description: The text
+      ParametersData: []
+      DiscreteParametersData: []
+    - Guid: d50da921-cf5f-4c41-bb26-228a4b0ac93e
+      Name: Word
+      Namespace: CoreNodes
+      OverrideDisplayedName: 
+      XPosition: 70
+      YPosition: 145
+      SizeX: 157
+      SizeY: 40
+      Inputs: []
+      Outputs:
+      - Guid: cf967d7d-5ad2-4121-bf4b-c5a75af15de4
+        IsBright: 1
+        Type: Var
+        Description: The Word
+      ParametersData:
+      - Value:
+          stringValue: RocketGame.const
+          floatValue: 0.000001
+        Type: 1
+      DiscreteParametersData: []
+    Links:
+    - Input:
+        Guid: 4c1c6ac4-cb82-4c9e-8c4e-d161f970f452
+        IsBright: 0
+        Type: Var
+        Description: value 1
+      Output:
+        Guid: 08dfc956-3fdf-4892-8ad3-092a56deec2a
+        IsBright: 1
+        Type: Var
+        Description: Path
+      outputPositionY: 0
+      GUID: 2a8cdbf6-47d7-4ca2-8959-8fe19d2df1fa
+    - Input:
+        Guid: 93defa40-76c7-448d-b45f-49c342419227
+        IsBright: 1
+        Type: Var
+        Description: value 2
+      Output:
+        Guid: cf967d7d-5ad2-4121-bf4b-c5a75af15de4
+        IsBright: 1
+        Type: Var
+        Description: The Word
+      outputPositionY: 0
+      GUID: 31cbd0e6-29de-44b2-9566-2eed0394c0d7
+    - Input:
+        Guid: dd8280e2-d5b3-4de1-bb5d-82ebd93113fd
+        IsBright: 1
+        Type: Var
+        Description: File path
+      Output:
+        Guid: 78adcfae-d13f-4765-bdfa-0c7b1e6143b2
+        IsBright: 0
+        Type: Var
+        Description: value 1 + value 2
+      outputPositionY: 0
+      GUID: 8d28e1bc-9391-4947-a544-73ae50fe0864
+    - Input:
+        Guid: f7a62821-21d2-4ecd-b0c2-2bcb3037efe7
+        IsBright: 0
+        Type: Object
+        Description: Constellation JSON
+      Output:
+        Guid: 6b09a703-1adf-4bb9-b9d2-f89e45986e4d
+        IsBright: 1
+        Type: Object
+        Description: Unity object
+      outputPositionY: 0
+      GUID: 49e02f22-aeaa-43dd-8917-1567c37ca5bb
+    - Input:
+        Guid: b6ffcc61-ee5a-4ca9-ade6-78db590042f0
+        IsBright: 0
+        Type: Var
+        Description: Const JSON
+      Output:
+        Guid: bd4e61de-b9c1-4bf4-897a-6cc3839d1456
+        IsBright: 0
+        Type: Var
+        Description: The text
+      outputPositionY: 0
+      GUID: 5b53bc7e-a4ae-441b-9079-3dbf52d32df4
+    Name: AddConstellation
+    NameSpace: 
+  IsInstance: 0
+  IsDifferentThanSource: 0
+  CanChangeType: 0
+  ScriptAssembly: {fileID: 11400000, guid: 89a4fe11dbae2084b9f9f1c4677b96eb, type: 2}
