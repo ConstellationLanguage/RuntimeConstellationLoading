@@ -45,13 +45,13 @@ namespace Constellation.Unity3D
                 return;
 
             nodeFactory = new NodesFactory(ConstellationData?.ScriptAssembly?.GetAllStaticScriptData());
-
+            var attributesCounter = 0;
             var nodes = ConstellationData.GetNodes();
             constellation = new Constellation(ConstellationData.script,
                 nodeFactory,
                 (newNode, node) =>
                 {
-                    var attributesCounter = 0;
+                    
                     if (IsAttribute(node) && Parameters != null)
                     {
                         IParameter nodeParameter = newNode.NodeType as IParameter;
